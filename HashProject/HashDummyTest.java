@@ -44,5 +44,13 @@ public class HashDummyTest
         // Verificar se existe um valor no HMap
         boolean existe19 = alunos.containsValue(19);
         System.out.println("19 existe: " + existe19);
+        
+        for(String key : alunos.keySet()) {
+            System.out.println("O valor da chave é: " + key);
+            
+            int value = alunos.get(key);
+            
+            System.out.println("E o seu valor é: " + value);
+        }
     }
 }
